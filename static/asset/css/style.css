@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #20729c !important;
+    color: #f0f1ca !important;
+    box-shadow: 0px 3px 5px #00000054;
+}
+
+.navbar a{
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar .logo{
+    width: 40px;
+    margin-right: 1%;
+    margin-left: 8%;
+}
+
+.navbar .nav-item:nth-child(1){
+    margin-left: 305%;
+}
+
+@media only screen and (max-width: 1600px){
+    .navbar .nav-item:nth-child(1){
+        margin-left: 250%;
+    }
+
+    .navbar .login{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .navbar .nav-item:nth-child(1){
+        margin-left: 190%;
+    }
+
+    .navbar .login{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .navbar .nav-item:nth-child(1){
+        margin-left: 0%;
+    }
+}
+
+.navbar .buttonSearch{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar .login, .navbar .register{
+    border: 1.5px solid #f0f1ca;
+    border-radius: 5px; 
+}
+
+.navbar .login{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.navbar .register{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+.cardGoods{
+    width: 1180px;
+    height: 700px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card{
+    z-index: 2;
+    position: absolute;
+    width: 180px;
+    height: 270px;
+    cursor: pointer;
+    
+}
+
+.card h6{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.card img{
+    height: 150px;
+}
+
+.card2{
+    margin-left: 200px;
+}
+
+.card3{
+    margin-left: 400px;
+}
+
+.card4{
+    margin-left: 600px;
+}
+
+.card5{
+    margin-left: 800px;
+}
+
+.card6{
+    margin-left: 1000px;
+}
+
+.card7{
+    margin-top: 313px;
+}
+
+.card8{
+    margin-top: 313px;
+    margin-left: 200px;
+}
+
+.card9{
+    margin-top: 313px;
+    margin-left: 400px;
+}
+
+.card10{
+    margin-top: 313px;
+    margin-left: 600px;
+}
+
+.card .star{
+    width: 15px;
+    height: 15px;
+}
+
+.rateStar{
+    margin-bottom: 0;
+}
+
+.slide{
+    margin: auto;
+    margin-top: 2%;
+    width: 70%;
+    height: 400px;
+}
+.carousel-item{
+    height: 400px;
+}

@@ -1,0 +1,30 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block title_head %}
+    <title>ZeetecShop | {{ title_head }}</title>
+{% endblock title_head %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'webAdmin/asset/css/style.css' %}">
+{% endblock style %}
+
+{% block body %}
+    
+    {% if user.is_authenticated %}
+        <h1>ANDA SUDAH LOGIN</h1>
+
+        <ul>
+            <li>
+                <a href="{% url 'webAdmin:createGoods' %}">Masukkan Barang</a>
+            </li>
+        </ul>
+
+
+    {% else %}
+        <h1>ANDA BELOM LOGIN</h1>   
+        <h2>Silahkan <a href="{% url 'webAdmin:login' %}">LOGIN</a></h2>
+    {% endif %}
+    
+
+{% endblock body %}

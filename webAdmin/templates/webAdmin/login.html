@@ -1,0 +1,32 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block title_head %}
+    <title>ZeetecShop | {{ title_head }}</title>
+{% endblock title_head %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'webAdmin/asset/css/style.css' %}">
+{% endblock style %}
+
+{% block body %}
+    {% if message != 'a' %}
+        <h1>{{message}}</h1>
+    {% endif %}
+    <h1 class="titlePage">Login</h1>
+
+    <form action="" method="post" class="formLogin form-group">
+        {% csrf_token %}
+        <div class="username">
+            <label for="username">Username : </label>
+            <input type="text" name="username" id="" class="inputUsername form-control">
+        </div>
+
+        <div class="password">
+            <label for="username">Password : </label>
+            <input type="text" name="password" id="" class="inputPassword form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+{% endblock body %}

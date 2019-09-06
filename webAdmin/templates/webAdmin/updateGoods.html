@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title_head %}
+    <title>ZeetecShop | {{ title_head }}</title>
+{% endblock title_head %}
+
+{% block body %}
+    <h1 class="title_page">{{ title_page }}</h1>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="inputName">
+            {{goods.nameGoods.label_tag}}
+            {{goods.nameGoods}}
+        </div>
+
+        <div class="inputDescription">
+            {{goods.descriptionGoods.label_tag}}
+            {{goods.descriptionGoods}}
+        </div>
+
+        <div class="inputType">
+            {{goods.typeGoods.label_tag}}
+            {{goods.typeGoods}}
+        </div>
+
+        <div class="inputCondition">
+            {{goods.conditionGoods.label_tag}}
+            {{goods.conditionGoods}}
+        </div>
+
+        <div class="inputPrice">
+            {{goods.priceGoods.label_tag}}
+            {{goods.priceGoods}}
+        </div>
+
+        <div class="inputImage">
+            {{goods.imagesGoods.label_tag}}
+            {{goods.imagesGoods}}
+        </div>
+
+        <div class="button">
+            <button type="reset">Batal</button>
+            <button type="submit">Kirim</button>
+        </div>
+    </form>
+
+{% endblock body %}

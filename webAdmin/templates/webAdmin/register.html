@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title_head %}
+    <title>Register</title>
+{% endblock title_head %}
+
+{% block body %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="inputName">
+            {{registerform.username.label_tag}}
+            {{registerform.username}}
+        </div>
+
+        <div class="inputEmail">
+            {{registerform.email.label_tag}}
+            {{registerform.email}}
+        </div>
+
+        <div class="inputPassword">
+            {{registerform.password.label_tag}}
+            {{registerform.password}}
+        </div>
+
+        <div class="inputPasswordRepeat">
+            {{registerform.passwordrepeat.label_tag}}
+            {{registerform.passwordrepeat}}
+        </div>
+
+        <div class="inputFirstname">
+            {{registerform.firstname.label_tag}}
+            {{registerform.firstname}}
+        </div>
+
+        <div class="inputLastname">
+            {{registerform.lastname.label_tag}}
+            {{registerform.lastname}}
+        </div>
+        <div class="button">
+            <button type="reset">Batal</button>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+{% endblock body %}
+
